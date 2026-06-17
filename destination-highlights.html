@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fardanil Travel Services</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="spinner-logo text-center">
+            <i class="fa-solid fa-plane-departure fa-3x text-teal mb-3 animate-bounce"></i>
+            <h5 class="fw-bold text-secondary">Loading Fardanil Travel...</h5>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-xl fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="assets/logo fl.jpg" alt="Logo FL" class="nav-logo">
+                <div class="brand-text-wrapper">
+                    <span class="brand-title fw-bold d-block">Fardanil</span>
+                    <span class="brand-subtitle text-secondary d-block">Travel Services</span>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger-custom fw-bold" href="destination-list.html">Destinations+</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destination-highlights.html">Destination Highlights</a></li>
+                    <li class="nav-item"><a class="nav-link" href="special-offers.html">Special Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger-custom fw-bold" href="signin.html">Sign In</a></li>
+                    <li class="nav-item ms-xl-2">
+                        <a class="btn btn-book-tour text-white fw-bold px-4 py-2.5 rounded-3 shadow-sm text-uppercase" href="book-tour.html">
+                            Book A Tour
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="subpage-header bg-teal text-white py-5 mt-5">
+        <div class="container text-center py-4">
+            <h1 class="fw-bold mb-0">Destination Highlights</h1>
+            <p class="small text-light-muted mb-0">Tempat-tempat ikonik paling populer pilihan wisatawan dunia</p>
+        </div>
+    </div>
+
+    <section class="py-5 bg-white text-start">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+                        <img src="assets/Raja Ampat.jpg" class="card-img-top object-fit-cover" alt="Raja Ampat" style="height: 220px;">
+                        <div class="card-body p-4">
+                            <span class="text-teal small fw-bold text-uppercase d-block mb-1">Indonesia</span>
+                            <h5 class="fw-bold text-dark mb-2">Keindahan Alam Raja Ampat</h5>
+                            <p class="text-secondary small mb-0">Jelajahi gugusan pulau karang menakjubkan dan pesona bawah laut terbaik di dunia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+                        <img src="assets/Finlandia.jpg" class="card-img-top object-fit-cover" alt="Cappadocia" style="height: 220px;">
+                        <div class="card-body p-4">
+                            <span class="text-teal small fw-bold text-uppercase d-block mb-1">Finlandia</span>
+                            <h5 class="fw-bold text-dark mb-2">Aurora Borealis</h5>
+                            <p class="text-secondary small mb-0">Menyaksikan aurora di Finlandia adalah pengalaman magis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+                        <img src="assets/Jepang.jpg" class="card-img-top object-fit-cover" alt="Kyoto" style="height: 220px;">
+                        <div class="card-body p-4">
+                            <span class="text-teal small fw-bold text-uppercase d-block mb-1">Japan</span>
+                            <h5 class="fw-bold text-dark mb-2">Historical Kyoto District</h5>
+                            <p class="text-secondary small mb-0">Berjalan menyusuri kuil tradisional yang tenang di tengah keindahan pohon sakura.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-teal text-white py-4 text-center small">&copy; 2026 Fardanil Travel Services. All Rights Reserved.</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        window.addEventListener('load', function () {
+            const preloader = document.getElementById('preloader');
+            if (preloader) {
+                preloader.style.opacity = '0';
+                setTimeout(() => {
+                    preloader.style.visibility = 'hidden';
+                }, 400);
+            }
+        });
+    </script>
+</body>
+</html>

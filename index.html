@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fardanil Travel Services</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <div id="preloader">
+        <div class="loader-content text-center">
+           <div class="spinner-logo text-center">
+            <i class="fa-solid fa-plane-departure fa-3x text-teal mb-3 animate-bounce"></i>
+            <h5 class="fw-bold text-secondary">Loading Fardanil Travel...</h5>
+        </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-xl fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="assets/logo fl.jpg" alt="Logo FL" class="nav-logo">
+                <div class="brand-text-wrapper">
+                    <span class="brand-title fw-bold d-block">Fardanil</span>
+                    <span class="brand-subtitle text-secondary d-block">Travel Services</span>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destination-list.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destination-highlights.html">Destination Highlights</a></li>
+                    <li class="nav-item"><a class="nav-link" href="special-offers.html">Special Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger-custom fw-bold" href="signin.html">Sign In</a></li>
+                    
+                    <li class="nav-item ms-xl-2">
+                        <a class="btn btn-book-tour text-white fw-bold px-4 py-2.5 rounded-3 shadow-sm text-uppercase" href="book-tour.html">
+                            Book A Tour
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <header id="hero" class="position-relative overflow-hidden vh-100 d-flex align-items-center justify-content-center" style="padding-top: 80px;">
+        <video autoplay muted loop id="myVideo" class="position-absolute w-100 h-100 object-fit-cover top-0 start-0 z-1">
+            <source src="assets/video-indonesia.mp4" type="video/mp4">
+        </video>
+        <div class="overlay position-absolute w-100 h-100 top-0 start-0 bg-dark opacity-50 z-2"></div>
+        
+        <div class="container position-relative z-3 text-center text-white" style="max-width: 950px; width: 100%;">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-11">
+                    
+                    <p class="mb-2 text-uppercase fw-semibold tracking-wide small" style="letter-spacing: 2px;">Welcome To Fardanil Travel Services</p>
+                    <h1 class="display-3 fw-bold mb-3">Let's Explore The World</h1>
+                    <p class="lead mb-5 mx-auto opacity-90" style="max-width: 650px;">Rasakan keseruan liburan tak terlupakan dengan berbagai destinasi menarik pilihan Anda!</p>
+
+                    <div class="search-box bg-white p-4 rounded-3 text-dark shadow-lg text-start">
+                        <form class="row g-3 align-items-center" action="destination-list.html" method="GET">
+                            
+                            <div class="col-md-5">
+                                <label class="form-label text-secondary small fw-bold mb-1">
+                                    <i class="fa-solid fa-location-dot me-1 text-danger"></i> Destination
+                                </label>
+                                <input type="text" class="form-control border-0 bg-light py-2" placeholder="Tell us where to go" required>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <label class="form-label text-secondary small fw-bold mb-1">
+                                    <i class="fa-solid fa-calendar-days me-1 text-danger"></i> Travel Dates
+                                </label>
+                                <input type="month" class="form-control border-0 bg-light py-2" required>
+                            </div>
+                            
+                            <div class="col-md-3 d-grid">
+                                <button type="submit" class="btn btn-danger py-2.5 fw-bold text-uppercase mt-md-4">
+                                    <i class="fa-solid fa-magnifying-glass me-1"></i> Search Tour
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <footer class="bg-teal text-white py-5">
+        <div class="container text-start">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-logo-box bg-white d-inline-block p-2 rounded mb-3">
+                        <img src="assets/logo fl.jpg" alt="Footer Logo" class="footer-logo">
+                    </div>
+                    <p class="small text-light-muted lh-relaxed">Menyediakan layanan paket perjalanan wisata domestik maupun mancanegara secara profesional, aman, nyaman, dan terpercaya.</p>
+                   <div class="info-item">
+                <span>CALL US</span>
+                <p>(+62) 83509999</p>
+            </div>
+            
+            <div class="info-item">
+                <span>MAIL US</span>
+                <p>hello@fdl travel.com</p>
+            </div>
+
+                    <div class="d-flex gap-2 mt-3">
+                        <a href="https://www.facebook.com/danil" target="_blank" class="sosmed-btn bg-warning text-dark rounded-circle d-flex align-items-center justify-content-center shadow-sm">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        
+                        <a href="https://www.instagram.com/fardanil" target="_blank" class="sosmed-btn bg-warning text-dark rounded-circle d-flex align-items-center justify-content-center shadow-sm">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="fw-bold small tracking-wide mb-3 text-warning">OUR SERVICES</h6>
+                    <ul class="list-unstyled footer-links small lh-lg">
+                        <li><a href="destination-list.html" class="text-white text-decoration-none">&rarr; International Tour Packages</a></li>
+                        <li><a href="destination-list.html" class="text-white text-decoration-none">&rarr; Domestic Destination Ticket</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h6 class="fw-bold small tracking-wide mb-3 text-warning">NEWSLETTER</h6>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control form-control-sm bg-white border-0 py-2" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn btn-warning fw-bold text-dark px-3 py-2">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="border-light opacity-20 my-4">
+            <div class="text-center small opacity-50">&copy; 2026 Fardanil Travel Services. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        window.addEventListener('load', function () {
+            const preloader = document.getElementById('preloader');
+            if (preloader) {
+                preloader.style.opacity = '0';
+                setTimeout(() => {
+                    preloader.style.visibility = 'hidden';
+                }, 400);
+            }
+        });
+    </script>
+</body>
+</html>

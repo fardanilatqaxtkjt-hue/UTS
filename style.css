@@ -1,0 +1,101 @@
+/* ==========================================
+   🎨 VARIABEL WARNA & ATURAN RESET UTAMA
+   ========================================== */
+:root {
+    --teal-dark: #51bbd8;     
+    --accent-yellow: #ffc107;  
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden; 
+}
+
+.bg-teal { background-color: var(--teal-dark) !important; }
+.btn-teal { background-color: var(--teal-dark) !important; color: #fff !important; }
+.btn-teal:hover { opacity: 0.9; }
+.btn-outline-teal { border: 2px solid var(--teal-dark) !important; color: var(--teal-dark) !important; background: transparent; }
+.btn-outline-teal:hover { background: var(--teal-dark) !important; color: #fff !important; }
+.text-teal { color: var(--teal-dark) !important; }
+.text-light-muted { color: #eaf8fb; } 
+.max-w-md { max-width: 750px; } 
+.max-w-sm { max-width: 550px; }
+
+/* ==========================================
+   ⏳ 1. LOGIKA ANIMASI PRELOADER TRANSISI
+   ========================================== */
+#preloader {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-color: #ffffff; z-index: 99999;
+    display: flex; align-items: center; justify-content: center;
+    transition: opacity 0.4s ease, visibility 0.4s;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+.animate-bounce { animation: bounce 1.2s infinite ease-in-out; }
+
+/* ==========================================
+   🧭 2. NAVBAR NAVIGATION STYLE
+   ========================================== */
+.navbar {
+    background-color: #ffffff !important; 
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+    padding: 12px 0;
+}
+.brand-title { color: var(--teal-dark); font-size: 24px; line-height: 1.1; }
+.brand-subtitle { font-size: 11px; }
+.nav-logo { height: 42px; width: auto; object-fit: contain; }
+.nav-link { color: #333333 !important; font-weight: 600; font-size: 15px; transition: color 0.2s; }
+.nav-link.active, .nav-link:hover { color: var(--teal-dark) !important; }
+
+/* ==========================================
+   🎬 3. HERO SECTION & LAYOUT
+   ========================================== */
+#hero { height: 100vh; }
+.object-fit-cover { object-fit: cover; }
+.opacity-40 { opacity: 0.4; }
+.tracking-wide { reading-flow: 2px; }
+
+/* ==========================================
+   🗺️ 4. GALERI GRID DESTINASI (4 KOLOM LAPTOP)
+   ========================================== */
+.title-line { width: 65px; height: 3.5px; background-color: var(--teal-dark) !important; border-radius: 2px; }
+.card-destinasi { height: 290px; cursor: pointer; box-shadow: 0 6px 20px rgba(0,0,0,0.06); }
+.transition-zoom { transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1); }
+.card-destinasi:hover .transition-zoom { transform: scale(1.08); }
+.card-overlay { background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 55%, rgba(0,0,0,0) 100%); }
+.yellow-line { width: 40px; height: 3px; background-color: var(--accent-yellow); border-radius: 1px; }
+
+.col-dest { flex: 0 0 25%; max-width: 25%; padding: 12px; }
+@media (max-width: 1199.98px) { .col-dest { flex: 0 0 50%; max-width: 50%; } }
+@media (max-width: 575.98px) { .col-dest { flex: 0 0 100%; max-width: 100%; } }
+
+/* ==========================================
+   ✉️ 5. FOOTER UTILITY & FOOTER ROW
+   ========================================== */
+.footer-logo { max-height: 50px; width: auto; }
+.sosmed-btn { width: 35px; height: 35px; text-decoration: none; font-size: 14px; transition: transform 0.2s; }
+.sosmed-btn:hover { transform: translateY(-3px); }
+/* Kelas kustomisasi warna teks merah menu Sign In */
+.text-danger-custom {
+    color: #51bbd8 !important;
+}
+.text-danger-custom:hover {
+    color: var(--teal-dark) !important;
+}
+
+/* Tombol Merah Solid BOOK A TOUR sesuai Gambar Referensi */
+.btn-book-tour {
+    background-color: #51bbd8 !important;
+    color: #ffffff !important;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border: none;
+    transition: all 0.2s ease;
+}
+.btn-book-tour:hover {
+    background-color: #e63939 !important;
+    transform: translateY(-1px);
+}
